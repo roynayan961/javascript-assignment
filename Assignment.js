@@ -10,6 +10,7 @@
 
         let mileCount = feetToMile(5281);
         console.log("Total Mile is:" +mileCount);
+        
 /*  tiny Friend Program */
 
         var arr = ["Nayan", "Shantu", "Lalu", "Piku", "Shanjoy", "Mithun"];
@@ -36,15 +37,14 @@ let bedCubic = 7;
 
  function woodCalculator (chairNeeded, tableNeeded, bedNeeded){
   
-let totalChairCubic = chairCubic * chairNeeded;
-let totalTableCubic = tableCubic * tableNeeded;
-let totalBedCubic = bedCubic * bedNeeded;
-let summationOfCubic = totalChairCubic+ totalTableCubic+ totalBedCubic;
+let totalChairCubic = chairCubic * chairNeeded; //how many cubic needed for chair assigned to this variable//
+let totalTableCubic = tableCubic * tableNeeded;//how many cubic needed for table assigned to this variable//
+let totalBedCubic = bedCubic * bedNeeded;  //how many cubic needed for bed assigned to this variable//
+let summationOfCubic = totalChairCubic+ totalTableCubic+ totalBedCubic; //Total Cubic //
 return summationOfCubic;
 
 }
-let totalCubic = woodCalculator(3, 2 , 1); //3 chair, 2 table, 1 bed inputted to function and assigned to to totalCubic//
- 
+let totalCubic = woodCalculator(3, 2 , 1); //3 chair, 2 table, 1 bed inputted by user and assigned to  totalCubic//
 console.log("Total Cubic needed to make  Chair, Table, and Bed  is:"+totalCubic); //print how many cubic needed//
 
 // bricksCalculator program----//
@@ -72,7 +72,7 @@ let bricksCount30 = totalFeetFloor30 * bricksPerFeet;
 let bricksCount30Plus = totalFeetFloor30Plus * bricksPerFeet;
 
 let bricksCount =  bricksCount10 + bricksCount20 + bricksCount30 + bricksCount30Plus; 
-return bricksCount;
+return bricksCount; //return Grand Total of Bricks//
 }
 let bricksAmount =  bricksCalculator(45);
 console.log("Total Bricks Needed To Build This Enourmous Edifice :" +bricksAmount);
