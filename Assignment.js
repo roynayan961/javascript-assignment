@@ -10,21 +10,35 @@
 
         let mileCount = feetToMile(5281);
         console.log("Total Mile is:" +mileCount);
-        
+
 /*  tiny Friend Program */
 
-        var arr = ["Nayan", "Shantu", "Lalu", "Piku", "Shanjoy", "Mithun"];
-function tinyFriend(){
-console.log(
-  arr.reduce(function(a, b) {
-    return a.length <= b.length ? a : b;
-  })
-)
-}
-let i;
-console.log("Tiny Friend award winner is: ");
- tinyFriend(arr[i]);
+        
 
+function tinyFriend(arr){
+
+    
+
+  arr = ["Nayan", "Shantu", "Lalu", "Piku", "Shanjoy", "Mithun"];
+  
+for(let i=1; i<arr.length; ){
+  let smallest = arr[0];
+  if(arr[i]<smallest){
+
+      smallest= arr[i];
+      return smallest;
+  }
+i++;
+
+
+}
+  
+
+
+
+}
+let output = tinyFriend();
+console.log("Tiny Friend is:" +output);
 
 
  
@@ -50,7 +64,7 @@ console.log("Total Cubic needed to make  Chair, Table, and Bed  is:"+totalCubic)
 // bricksCalculator program----//
 
 
-function bricksCalculator (totalFloor){
+function brickCalculator (totalFloor){
   
   let bricksPerFeet = 1000;
 let uptoFloor_10 = 10; // upto 1-10th floor its height 10 feet per floor; //
@@ -74,6 +88,6 @@ let bricksCount30Plus = totalFeetFloor30Plus * bricksPerFeet;
 let bricksCount =  bricksCount10 + bricksCount20 + bricksCount30 + bricksCount30Plus; 
 return bricksCount; //return Grand Total of Bricks//
 }
-let bricksAmount =  bricksCalculator(45);
+let bricksAmount =  brickCalculator(45);
 console.log("Total Bricks Needed To Build This Enourmous Edifice :" +bricksAmount);
 
